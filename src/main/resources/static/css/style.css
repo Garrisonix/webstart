@@ -1,8 +1,50 @@
 body {
-    padding-top: 60px;
+    background: #085078;
+    background: -webkit-linear-gradient(to left, #085078 , #85D8CE);
+    background: linear-gradient(to left, #085078 , #85D8CE);
 }
 
 .starter-template{
     padding: 40px 15px;
     text-align: center;
+}
+
+.marketing .span4 {
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .span4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.member-title {
+    color: #f0f8ff;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+.featurette {
+    padding-top: 120px;
+    overflow: hidden;
+}
+.featurette-image {
+    margin-top: -120px;
+}
+
+.featurette-image.pull-left {
+    margin-right: 40px;
+}
+.featurette-image.pull-right {
+    margin-left: 40px;
+}
+
+.featurette-heading {
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
