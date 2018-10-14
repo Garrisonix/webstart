@@ -1,0 +1,26 @@
+<!doctype html>
+<!--suppress ALL -->
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="common/header :: common-header"/>
+
+<body>
+
+<nav th:replace="common/navbar :: common-navbar" />
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1 th:text="#{index.main.callout}" class="display-3">callout text</h1>
+        <p class="lead">Jumbo helper text</p>
+        <hr class="my-2">
+        <p>More info</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+        </p>
+    </div>
+    <i class="fa fa-home" aria-hidden="true"></i>
+</div>
+<div th:replace="common/footer :: common-footer"/>
+</body>
+</html>
