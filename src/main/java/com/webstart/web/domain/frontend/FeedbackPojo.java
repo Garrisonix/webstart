@@ -2,9 +2,6 @@ package com.webstart.web.domain.frontend;
 
 import java.io.Serializable;
 
-/**
- * Created by tedonema on 20/03/2016.
- */
 public class FeedbackPojo implements Serializable {
 
     private static final long serialVersionUID = 1L;
