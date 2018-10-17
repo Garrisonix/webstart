@@ -11,7 +11,7 @@
         <div class="collapse navbar-collapse" id="navbarId">
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                 <li class="nav-item-active">
-                    <a th:text="#{navbar.home.text}" class="nav-link" href="#"></a>
+                    <a th:text="#{navbar.home.text}" class="nav-link" href="/"></a>
                 </li>
                 <li class="nav-item-active">
                     <a th:text="#{navbar.about.text}" class="nav-link" href="/about"></a>
@@ -19,6 +19,10 @@
                 <li class="nav-item-active">
                     <a th:text="#{navbar.contact.text}" class="nav-link" href="/contact"></a>
                 </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a th:href="@{/login}" th:text="#{navbar.login.text}"></a></li>
             </ul>
         </div>
     </div>

@@ -9,18 +9,35 @@
 <nav th:replace="common/navbar :: common-navbar" />
 
 <div class="container">
-
-    <div class="jumbotron">
-        <h1 th:text="#{index.main.callout}" class="display-3">callout text</h1>
-        <p class="lead">Jumbo helper text</p>
-        <hr class="my-2">
-        <p>More info</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-        </p>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="well">
+                <div class="text-center">
+                    <h1 th:text="#{login.h1.text}" />
+                    <p class="lead" th:text="#{login.p.lead}" />
+                </div>
+                <div class="text-left">
+                    <form id="loginForm"
+                          th:action="@{/login}"
+                          method="post">
+                        <div class="form-group">
+                            <label for="username" th:text="#{login.username.text}" />
+                            <input type="text" id="username" name="username" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="password" th:text="#{login.password.text}" />
+                            <input type="password" id="password" name="password" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" th:text="#{navbar.login.text}" class="btn btn-primary" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-    <i class="fa fa-home" aria-hidden="true"></i>
 </div>
+
 <div th:replace="common/footer :: common-footer"/>
 </body>
 </html>
